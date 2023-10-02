@@ -1,8 +1,5 @@
-# React + Vite
+# Animanga Data Site
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a watered down version of Anilist/MyAnimeList, using the [Jikan REST API](https://docs.api.jikan.moe/). This project was primarily practice for me to fetch and read API data, along with CSS practice since it required much more individual component styling than my previous projects. Sadly, there were a caveats that came with the API. Firstly, there's a rate limiting (3 requests/second) that results in crashing. Second, there's a bug where searching for a character or staff member with a 3-lettered name results in an unknown endpoint, resulting in another crashing. Third, the API has an extremely tedious way of filtering data by a starting and end year that wouldn't serve the purpose of what I wanted to do with filtering search results by year. 
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Regardless, I'm still quite pleased with the end result. Due to life circumstances, I didn't have as much as time to dedicate myself to making this a full CRUD application like I'd intended and have spent much longer than needed on this. Therefore, I'd like to revisit this in the future and update it. I plan on making this more than a mere "read" application, and allow users to create accounts, sign in, leave ratings and reviews, etc.
